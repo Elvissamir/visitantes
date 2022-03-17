@@ -1,7 +1,7 @@
 <template>
   <div class="banner ">
     <figure>
-      <img   class="w-full " src='../assets/banner.png' alt="Banner del Ministerio">
+      <img class="w-full " src='../assets/banner.png' alt="Banner del Ministerio">
     </figure>
   </div>
 
@@ -11,9 +11,7 @@
 export default {
 
   data() {
-    return{
-
-    }
+    return {}
   }
 }
 </script>

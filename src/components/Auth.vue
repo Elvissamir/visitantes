@@ -2,7 +2,7 @@
 
   <div id="auth" class="h-[90vh] flex flex-col bg-dirtywhite  box-border">
 
-<login-title></login-title>
+    <login-title></login-title>
     <login-box></login-box>
   </div>
 </template>
@@ -13,14 +13,12 @@ import LoginTitle from "./LoginTitle.vue";
 
 export default {
   name: "Auth",
-  components:{
+  components: {
     LoginBox,
     LoginTitle
   },
-  data(){
-    return{
-
-    }
+  data() {
+    return {}
   }
 
 }

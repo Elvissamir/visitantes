@@ -1,9 +1,9 @@
 
-.loginForm{
- @apply  w-[450px] h-[240px] mt-40 mb-60 mx-auto bg-royal drop-shadow-cs rounded-[10px];
+.loginForm {
+    @apply w-[450px] h-[240px] mt-40 mb-60 mx-auto bg-royal drop-shadow-cs rounded-[10px];
 }
 
-.loginInput  {
+.loginInput {
     @apply h-10 w-60 bg-white  rounded font-content font-medium text-royal border-2 border-slate-500 focus:border-oran;
 }
 
@@ -11,6 +11,7 @@
 
     outline: none;
 }
+
 input[placeholder] {
 
     @apply pl-2;

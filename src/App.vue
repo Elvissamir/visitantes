@@ -8,6 +8,7 @@
 import Tail from "./components/Tail.vue";
 import Banner from "./components/Banner.vue";
 import Auth from "./components/Auth.vue";
+
 export default {
   components: {
     Tail,
@@ -16,7 +17,7 @@ export default {
   },
   data() {
     return {
-      bannerPath:'../public/banner.png',
+      bannerPath: '../public/banner.png',
 
     }
   }
@@ -24,7 +25,6 @@ export default {
 </script>
 
 <style>
-
 
 
 </style>

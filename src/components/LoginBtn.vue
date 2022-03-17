@@ -1,6 +1,6 @@
 <template>
 
-  <div >
+  <div>
     <button class="loginBtn">ENTRAR</button>
   </div>
 
