@@ -15,6 +15,7 @@ module.exports = {
         'dracula':'#2A2F35',
         'boregray':'#C4C4C4',
         'firered':'#DE6666',
+        'oran':'#FCA311',
 
       },
       fontFamily:{

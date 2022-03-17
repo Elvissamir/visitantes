@@ -1,6 +1,6 @@
 <template>
 
-  <div id="auth" class="h-[90vh] flex flex-col bg-dirtywhite  ">
+  <div id="auth" class="h-[90vh] flex flex-col bg-dirtywhite  box-border">
 
 <login-title></login-title>
     <login-box></login-box>
