@@ -1,5 +1,6 @@
 <template>
 
+
 </template>
 
 <script>
@@ -8,7 +9,9 @@ export default {
   data() {
 
   },
-  methods: {}
+  methods: {
+
+  }
 
 }
 </script>

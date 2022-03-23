@@ -1,20 +1,28 @@
 <template>
-  <banner banner-path="{bannerPath}"></banner>
-  <auth></auth>
-  <tail></tail>
+  <top-banner banner-path="{bannerPath}"></top-banner>
+  <nav-bar></nav-bar>
+  <main class="box-border h-full">
+    <router-view></router-view>
+  </main>
+
 </template>
 
 <script>
-import Tail from "./components/Tail.vue";
-import Banner from "./components/Banner.vue";
-import Auth from "./components/Auth.vue";
+
+
+import TopBanner from "./components/TopBanner.vue";
+import NavBar from "./components/NavBar.vue";
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
   components: {
-    Tail,
-    Banner,
-    Auth
+    TopBanner,
+    TheFooter,
+    NavBar
+
   },
+
+
   data() {
     return {
       bannerPath: '../public/banner.png',
