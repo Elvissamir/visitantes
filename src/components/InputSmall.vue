@@ -1,18 +1,10 @@
 <template>
 
-
 </template>
 
 <script>
 export default {
-  name: "HomePage",
-  data() {
-
-  },
-  methods: {
-
-  }
-
+  name: "InputSmall"
 }
 </script>
 

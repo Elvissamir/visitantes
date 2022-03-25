@@ -4,13 +4,13 @@
 
       <div class="menu-item">
 
-        <router-link to="HomePage">
+        <router-link to="home">
           <img src="../assets/svg/home.svg" alt="">
         </router-link>
 
       </div>
 
-      <div class="dropdown menu-item "  >
+      <div class="dropdown menu-item ">
 
         <button class="dropdown-btn" @click="setActive(1)">
           VISITANTE
@@ -64,7 +64,7 @@
       </div>
 
       <div class="menu-item" id="logout-btn">
-        <router-link to="">
+        <router-link to="login">
           <img src="../assets/svg/logout.svg" alt="">
         </router-link>
       </div>

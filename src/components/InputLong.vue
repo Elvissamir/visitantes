@@ -1,10 +1,11 @@
 <template>
 
+
 </template>
 
 <script>
 export default {
-  name: "ImageWrapper"
+  name: "InputLong"
 }
 </script>
 

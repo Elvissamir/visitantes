@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import LoginBox from "./LoginBox.vue";
-import LoginTitle from "./LoginTitle.vue";
+import LoginBox from "../components/LoginBox.vue";
+import LoginTitle from "../components/LoginTitle.vue";
 
 export default {
   name: "Auth",

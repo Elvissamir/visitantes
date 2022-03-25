@@ -23,3 +23,18 @@ input[placeholder] {
     @apply bg-boregray w-[110px] h-[30px] mt-2  mb-2 rounded font-title font-bold text-xs drop-shadow-cs text-dracula hover:bg-firered hover:text-white;
 }
 
+.app-container {
+
+
+    @apply w-full min-h-screen relative bg-dirtywhite;
+}
+
+.main-content-wrapper {
+    @apply w-full h-auto mb-24;
+}
+
+.content {
+    max-width: 1000px;
+    @apply pt-6 w-10/12 mx-auto min-h-screen lg:pt-24;
+}
+
