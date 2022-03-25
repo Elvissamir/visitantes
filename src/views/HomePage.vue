@@ -1,7 +1,7 @@
 <template>
-  <div class="box-border bg-dirtywhite">
+  <div class="box-border  main-content-wrapper">
     <h1 class="font-subtitle font-medium text-md text-2xl my-[52px] text-center">Control de Acceso </h1>
-    <section class="flex flex-row flex-nowrap justify-center items-center ">
+    <section class="info-row">
 
       <div class="info-display relative">
         <h2 class="info-item text-4xl">Visitantes Activos : {{ active }}</h2>
@@ -10,7 +10,7 @@
 
         <div class="box-time absolute top-[262px] left-[451px] flex flex-row justify-center items-center">
           <img src="../assets/svg/watch.svg" alt="svg watch" class="icon-watch">
-          <p class="text-white font-subtitle font-medium text-6xl ">{{ hour }}:{{ minutes }}</p>
+          <p class="text-white font-subtitle font-medium text-6xl ">{{ new Date().getHours() }}:{{ new Date().getMinutes() }}</p>
         </div>
       </div>
 
@@ -31,23 +31,18 @@ export default {
       amount: null,
       close: null,
       active: null,
-      date: new Date(),
-      hour: this.date.getHours(),
-      minutes: this.date.getMinutes(),
-    }
-
-  },
-  watch: {
-    hour(){
 
     }
   },
-  methods: {}
 }
 
 </script>
 
 <style scoped>
+
+.info-row {
+  @apply flex flex-row flex-nowrap justify-center items-center
+}
 
 .info-display {
   width: 730px;

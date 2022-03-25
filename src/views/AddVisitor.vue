@@ -1,15 +1,13 @@
-<template></template>
+<template>
+
+</template>
 
 <script>
 export default {
-  name: "InputLong",
-  data() {
-
-  }
+  name: "AddVisitor"
 }
 </script>
 
 <style scoped>
-
 
 </style>

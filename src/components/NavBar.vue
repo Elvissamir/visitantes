@@ -1,10 +1,10 @@
 <template>
   <header>
-    <nav class="navbar ">
+    <nav class="navbar drop-shadow-cs">
 
       <div class="menu-item">
 
-        <router-link to="home">
+        <router-link to="/home">
           <img src="../assets/svg/home.svg" alt="">
         </router-link>
 
@@ -64,7 +64,7 @@
       </div>
 
       <div class="menu-item" id="logout-btn">
-        <router-link to="login">
+        <router-link to="/login">
           <img src="../assets/svg/logout.svg" alt="">
         </router-link>
       </div>
