@@ -12,13 +12,19 @@ import LoginBox from "../components/LoginBox.vue";
 import LoginTitle from "../components/LoginTitle.vue";
 
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: "Auth",
   components: {
     LoginBox,
     LoginTitle
   },
   data() {
-    return {}
+    return {
+      currentPath:this.$route.path,
+    }
+  },
+  mounted() {
+    console.log(this.currentPath);
   }
 
 }

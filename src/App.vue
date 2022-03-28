@@ -1,6 +1,6 @@
 <template>
   <top-banner banner-path="{bannerPath}"></top-banner>
-  <nav-bar></nav-bar>
+  <nav-bar v-if="$route.path !=='/'"></nav-bar>
   <main class="bg-dirtywhite">
     <router-view></router-view>
   </main>

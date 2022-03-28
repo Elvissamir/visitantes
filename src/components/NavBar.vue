@@ -19,7 +19,7 @@
 
         <div :class="isActiveVisitor ? 'dropdown-content':'hidden'">
 
-          <router-link class="sub-menu-item " to="">REGISTRAR</router-link>
+          <router-link class="sub-menu-item " to="/visitor">REGISTRAR</router-link>
           <router-link class="sub-menu-item" to="">BUSCAR</router-link>
 
         </div>
@@ -64,7 +64,7 @@
       </div>
 
       <div class="menu-item" id="logout-btn">
-        <router-link to="/login">
+        <router-link to="/">
           <img src="../assets/svg/logout.svg" alt="">
         </router-link>
       </div>
@@ -90,14 +90,10 @@ export default {
         this.isActiveVisitor = !this.isActiveVisitor;
       } else if (btn === 2) {
         this.isActiveAdmin = !this.isActiveAdmin;
-
       } else if (btn === 3) {
         this.isActiveUser = !this.isActiveUser;
-
       }
     }
-
-
   }
 }
 </script>

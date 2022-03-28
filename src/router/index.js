@@ -4,7 +4,7 @@ import HomePage from "../views/HomePage.vue";
 import AddVisitor from "../views/AddVisitor.vue";
 
 const routes = [
-  { path: "/login", component: Auth },
+  { path: "/", component: Auth },
   { path: "/home", component: HomePage },
   { path: "/visitor", component: AddVisitor },
 ];
