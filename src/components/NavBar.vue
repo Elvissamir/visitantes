@@ -7,7 +7,6 @@
         <router-link to="/home">
           <img src="../assets/svg/home.svg" alt="">
         </router-link>
-
       </div>
 
       <div class="dropdown menu-item ">

@@ -1,14 +1,14 @@
 <template>
   <div class="form-control-long">
-    <label :for="fieldName" class="labelField">{{fieldName}}</label>
-    <input type="text" :name="fieldName"  :id="fieldName" class="inputField" />
+    <label :for="name" class="labelField">{{name}}</label>
+    <input type="text" :name="name"  :id="name" class="inputField" />
   </div>
 </template>
 
 <script>
 export default {
   name: "InputLong",
-  props:['fieldName'],
+  props:['name'],
   data() {
     return {}
   }
@@ -18,11 +18,12 @@ export default {
 <style scoped>
 
 input {
-  @apply w-[530px] h-[40px] bg-white font-content focus:border-2 border-oran
+  border-radius: 5px;
+  @apply w-[530px] h-[40px] bg-white font-content focus:border-2 border-oran outline-none
 }
 
 label {
-  @apply font-content font-normal text-sm text-black mb-[12px]
+  @apply font-content font-normal text-sm text-black mb-[12px] block
 }
 
 
