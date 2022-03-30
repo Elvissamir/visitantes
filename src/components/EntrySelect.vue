@@ -6,8 +6,11 @@
 </template>
 <script>
 export default {
-  name: "InputSelectLong",
-  props: ['fieldName', 'options']
+  name: "EntrySelect",
+  props: ['fieldName', 'options'],
+  data () {
+    return
+  }
 }
 </script>
 
@@ -18,7 +21,7 @@ label {
 }
 
 select {
-  @apply w-[530px] h-[40px] bg-white font-content focus:border-2 border-oran
+  @apply w-[530px] h-[40px] bg-white font-content
 }
 
 </style>

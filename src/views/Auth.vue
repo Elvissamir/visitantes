@@ -1,7 +1,6 @@
 <template>
 
   <div id="auth" class="h-[90vh] flex flex-col bg-dirtywhite  box-border">
-
     <login-title></login-title>
     <login-box></login-box>
   </div>
@@ -20,7 +19,7 @@ export default {
   },
   data() {
     return {
-      currentPath:this.$route.path,
+      currentPath: this.$route.path,
     }
   },
   mounted() {

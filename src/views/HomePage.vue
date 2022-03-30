@@ -1,5 +1,5 @@
 <template>
-  <div class="box-border  main-content-wrapper">
+  <div class="box-border main-content-wrapper">
     <h1 class="font-subtitle font-medium text-md text-2xl my-[52px] text-center">Control de Acceso </h1>
     <section class="info-row">
 
@@ -10,10 +10,9 @@
 
         <div class="box-time absolute top-[262px] left-[451px] flex flex-row justify-center items-center">
           <img src="../assets/svg/watch.svg" alt="svg watch" class="icon-watch">
-          <p class="text-white font-subtitle font-medium text-6xl ">{{ new Date().getHours() }}:{{ new Date().getMinutes() }}</p>
+          <p class="text-white font-subtitle font-medium text-5xl ">{{ hour }}:{{ minutes }}:{{ seconds }}</p>
         </div>
       </div>
-
       <div class="brand-vector">
         <img src="../assets/carnet.png" alt="">
       </div>
@@ -31,11 +30,27 @@ export default {
       amount: null,
       close: null,
       active: null,
+      hour: null,
+      minutes: null,
+      seconds: null,
 
     }
   },
-}
+  created() {
+    this.getTime();
+  },
+  methods: {
+    getTime() {
+      const time = setInterval(() => {
+        this.hour = new Date().getHours();
+        this.minutes = new Date().getMinutes();
+        this.seconds = new Date().getSeconds();
 
+      }, 1000);
+
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -62,7 +77,7 @@ export default {
   width: 264px;
   height: 130px;
   border-radius: 5px;
-  @apply border-2 bg-transparent border-oran
+  @apply border-2 bg-transparent border-oran mr-1
 }
 
 .brand-vector {
