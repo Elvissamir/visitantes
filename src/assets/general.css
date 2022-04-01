@@ -8,14 +8,11 @@
 }
 
 .loginInput:focus {
-
     outline: none;
 }
 
 input[placeholder] {
-
     @apply pl-2;
-
 }
 
 
@@ -24,7 +21,6 @@ input[placeholder] {
 }
 
 .app-container {
-
 
     @apply w-full min-h-screen relative bg-dirtywhite;
 }

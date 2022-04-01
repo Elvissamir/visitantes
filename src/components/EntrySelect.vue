@@ -5,7 +5,6 @@
       <option v-for="option in options" :value="option.id">{{ option.name }}</option>
     </select>
   </div>
-
 </template>
 <script>
 export default {
@@ -24,11 +23,16 @@ label {
 }
 
 select {
-  @apply w-[530px] h-[40px] bg-white font-content
+  border-radius: 5px;
+  @apply w-[530px] h-[40px] bg-white font-content outline-none focus:border-2 border-oran
 }
 
 option {
  @apply font-content text-sm font-bold
+}
+
+.select-control {
+  @apply mb-[12px]
 }
 
 </style>

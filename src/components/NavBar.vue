@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar drop-shadow-cs">
+    <nav class="navbar shadow-md">
 
       <div class="menu-item">
 

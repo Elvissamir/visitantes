@@ -1,7 +1,7 @@
 <template>
   <top-banner banner-path="{bannerPath}"></top-banner>
   <nav-bar v-if="$route.path !=='/'"></nav-bar>
-  <main class="bg-dirtywhite h-[90vh]">
+  <main class="bg-dirtywhite">
     <router-view></router-view>
   </main>
   <the-footer></the-footer>

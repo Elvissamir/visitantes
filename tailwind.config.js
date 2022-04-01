@@ -10,6 +10,7 @@ module.exports = {
       },
       colors:{
         'dirtywhite':'#FCEFEF',
+        'dirtydark':'#F3E3E3',
         'deepblue':'#14213D',
         'royal':'#554E4E',
         'dracula':'#2A2F35',
