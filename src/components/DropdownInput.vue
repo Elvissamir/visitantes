@@ -1,11 +1,11 @@
 <template>
-  <div class="dropdown-cell">
-    <p>
-      <slot></slot>
-    </p>
-    <img src="../assets/svg/bx-plus.svg" alt="" class="icon-plus">
-    <div class="dropdown-body">
-     <slot name="body"></slot>
+  <div class="dropdown-item">
+    <button @click="setActiveDropdown">
+      <slot name="default"></slot>
+      <img src="../assets/svg/bx-plus.svg" alt="icon-dropdown" class="icon-plus">
+    </button>
+    <div :class="isDropdownActive ?'dropdown-body':'hidden'">
+      <slot name="body"></slot>
     </div>
   </div>
 </template>
@@ -15,20 +15,25 @@ import EntrySmall from "./EntrySmall.vue";
 
 export default {
   name: "DropdownInput",
-  components:{
+  components: {
     EntrySmall,
   },
   data() {
     return {
-
+      isDropdownActive: true,
     };
   },
+  methods: {
+    setActiveDropdown() {
+      this.isDropdownActive = true;
+    }
+  }
 }
 </script>
 
 <style scoped>
 
-.dropdown-cell {
+.dropdown-item {
   border-radius: 5px 5px 0px 0px;
   @apply relative bg-dirtydark w-[531px] h-[34px] font-content text-sm font-normal flex flex-row
 }
@@ -38,7 +43,7 @@ export default {
 }
 
 .icon-plus {
-  @apply w-[24px] h-[24px]
+  @apply w-[24px] h-[24px] inline-block
 }
 
 </style>

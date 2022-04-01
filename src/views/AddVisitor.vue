@@ -5,12 +5,12 @@
       <h2 class="sub mb-[25px]">Datos Personales</h2>
 
       <div class="row">
-        <entry-small name="Cedula"></entry-small>
-        <entry-small name="Celular"></entry-small>
+        <entry-small name="Cedula" v-model.trim="cardId"></entry-small>
+        <entry-small name="Celular" v-model.trim="phone"></entry-small>
       </div>
       <div class="row">
-        <entry-small name="Nombre"></entry-small>
-        <entry-small name="Apellido"></entry-small>
+        <entry-small name="Nombre" v-model.trim="name"></entry-small>
+        <entry-small name="Apellido" v-model.trim="lastName"></entry-small>
       </div>
 
       <h2 class="sub mt-[16px] mb-[21px]">Visita</h2>
@@ -29,10 +29,9 @@
           <entry-small name="Codigo Tarjeta"></entry-small>
         </div>
         <entry-select name="Motivo"></entry-select>
-
-        <base-button>Registrar</base-button>
-
       </div>
+
+      <base-button>Registrar</base-button>
     </form>
   </div>
 </template>
@@ -59,7 +58,11 @@ export default {
         {id: 2, name: 'Opcion 2'},
         {id: 3, name: 'Opcion 3'},
         {id: 4, name: 'Opcion 4'}
-      ]
+      ],
+      name: '',
+      lastName: '',
+      cardId: null,
+      phone: ''
     }
   }
 }
