@@ -1,15 +1,15 @@
 <template>
   <div class="collapse-form">
-    <button @click="setActiveCollapse" class="collapse-item">
-      {{ title }}
+    <div @click="setActiveCollapse" class="collapse-item">
+      <h1 class=" ml-[14px] w-[65px]">{{ title }}</h1>
       <img
           src="../assets/svg/bx-plus.svg"
           alt="icon-dropdown"
           class="icon-plus"
       />
-    </button>
+    </div>
     <div :class="isCollapseActive ?'collapse-body':'hidden'">
-      <entry-small v-for="field in fields" :name="field" :key="field"></entry-small>
+      <entry-small v-for="field in fields" :name="field" :key="field" ></entry-small>
     </div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     setActiveCollapse() {
-      this.isDropdownActive = true;
+      this.isCollapseActive = !this.isCollapseActive;
     }
   }
 }
@@ -37,18 +37,21 @@ export default {
 <style scoped>
 
 .collapse-form {
-  @apply  relative w-[531px] h-[34px]
+  @apply relative w-[531px] h-[34px]
 }
+
 .collapse-item {
   border-radius: 5px 5px 0px 0px;
-  @apply  bg-dirtydark w-[531px] h-[34px] font-content text-sm font-normal
+  @apply bg-dirtydark w-[531px] h-[34px] font-content text-sm font-normal flex flex-row   items-center
 }
 
 .collapse-body {
-  @apply absolute w-[531px] h-[180px] bg-dirtydark flex flex-row flex-wrap px-[10px] my-[15px]
+  @apply absolute w-[531px] h-[180px] bg-dirtydark flex flex-row flex-wrap gap-x-2 px-[10px] my-[15px] top-[34px]
 }
 
 .icon-plus {
+
+  @apply  w-[24px] h-[24px] ml-[427px]
 }
 
 </style>

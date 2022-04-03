@@ -30,8 +30,12 @@
         </div>
         <entry-select name="Motivo"></entry-select>
       </div>
+      <div class="column mt-[25px] mb-[54px]">
+        <collapse-input title="Vehiculos" :fields="carsCollapseInput"></collapse-input>
+        <collapse-input title="Equipos"  :fields="devicesCollapseInput"></collapse-input>
+      </div>
 
-      <base-button>Registrar</base-button>
+
     </form>
   </div>
 </template>
@@ -42,6 +46,7 @@ import EntrySmall from "../components/EntrySmall.vue";
 import EntryLong from "../components/EntryLong.vue";
 import EntrySelect from "../components/EntrySelect.vue";
 import BaseButton from "../components/BaseButton.vue";
+import CollapseInput from "../components/CollapseInput.vue";
 
 export default {
   name: 'AddVisitor',
@@ -50,6 +55,7 @@ export default {
     EntryLong,
     EntrySelect,
     BaseButton,
+    CollapseInput
   },
   data() {
     return {
@@ -62,7 +68,18 @@ export default {
       name: '',
       lastName: '',
       cardId: null,
-      phone: ''
+      phone: '',
+      devicesCollapseInput:[
+          'Marca',
+          'Modelo',
+          'Serial'
+
+      ],
+      carsCollapseInput:[
+          'Marca',
+          'Modelo',
+          'Numero de Placa'
+      ]
     }
   }
 }
@@ -76,7 +93,7 @@ export default {
 }
 
 .column {
-  @apply flex flex-col flex-nowrap items-start justify-evenly
+  @apply flex flex-col flex-nowrap items-start
 }
 
 .sub {
