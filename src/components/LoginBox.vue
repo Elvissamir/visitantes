@@ -10,7 +10,6 @@
     <p v-if="alert" class="text-red-400 text-xs  ml-24 mb-3">{{ info }}</p>
     <login-btn class="flex flex-row justify-center"></login-btn>
 
-
   </form>
 
 

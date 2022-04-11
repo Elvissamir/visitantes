@@ -1,14 +1,14 @@
 <template>
   <div class="form-control-long">
     <label :for="name" class="labelField">{{name}}</label>
-    <input type="text" :name="name"  :id="name" class="inputField" />
+    <input :type="inputType" :name="name"  @input="$emit('update:modelValue',$event.target.value)" :value="modelValue" :id="name" class="inputField" />
   </div>
 </template>
 
 <script>
 export default {
   name: "InputLong",
-  props:['name'],
+  props:['name','inputType','modelValue'],
   data() {
     return {}
   }

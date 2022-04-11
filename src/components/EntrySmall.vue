@@ -1,13 +1,14 @@
 <template>
   <div class="control-form">
     <label :for="name">{{ name }}:</label>
-    <input :id="name" type="text" :value="dataInput"/>
+    <input :id="name" :type="inputType" :value="modelValue" @input="$emit('update:modelValue',$event.target.value)" autocomplete="off"/>
   </div>
 </template>
 <script>
 export default {
   name: "EntrySmall",
-  props: ['name','dataInput'],
+  props: ['name','modelValue','inputType'],
+  emits:['update:modelValue'],
   data() {
     return {}
   }

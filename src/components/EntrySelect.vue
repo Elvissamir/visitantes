@@ -1,8 +1,8 @@
 <template>
   <div class="select-control">
     <label :for="name">{{ name }}</label>
-    <select :name="name" :id="name">
-      <option v-for="option in options" :value="option.id">{{ option.name }}</option>
+    <select :name="name" :id="name" v-model="optionValue" @change="$emit('selectValue',optionValue)">
+      <option v-for="option in options" :value="option.id" >{{ option.name }}</option>
     </select>
   </div>
 </template>
@@ -10,8 +10,11 @@
 export default {
   name: "EntrySelect",
   props: ['name', 'options'],
+  emits:['selectValue'],
   data() {
-    return {}
+    return {
+      optionValue:""
+    }
   }
 }
 </script>
