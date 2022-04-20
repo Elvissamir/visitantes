@@ -14,7 +14,7 @@ export default {
 
 .baseButton {
   border-radius: 5px;
-  @apply w-[110px] h-[30px] mx-auto bg-deepblue text-white  font-title font-bold text-xs shadow-md hover:bg-white hover:border-2 hover:border-deepblue hover:text-deepblue mb-2
+  @apply w-[110px] h-[30px]  bg-deepblue text-white  font-title font-bold text-xs shadow-md hover:bg-white hover:border-2 hover:border-deepblue hover:text-deepblue mb-2
 }
 
 </style>
