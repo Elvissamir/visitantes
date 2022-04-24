@@ -1,6 +1,6 @@
 <template>
 
-  <div id="auth" class="h-[90vh] flex flex-col bg-dirtywhite  box-border">
+  <div id="auth" class=" flex flex-col bg-dirtywhite  box-border main-wrapper">
     <h1 class="font-title text-black text-4xl font-bold mx-auto mt-28">Conectarse</h1>
     <login-box></login-box>
   </div>

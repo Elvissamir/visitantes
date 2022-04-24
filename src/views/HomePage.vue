@@ -1,5 +1,5 @@
 <template>
-  <div class="box-border main-content-wrapper h-[90vh]">
+  <div class="box-border main-content-wrapper ">
     <h1 class="font-subtitle font-medium text-md text-2xl my-[52px] text-center">Control de Acceso </h1>
     <section class="info-row">
 

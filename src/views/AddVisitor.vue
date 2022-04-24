@@ -1,9 +1,9 @@
 <template>
-  <div class="mx-[78px] flex flex-col shrink-1 h-[138vh]">
+  <div class="mx-[78px] flex flex-col shrink-1 h-full">
     <h1 class="text-2xl font-subtitle text-black font-medium mt-[60px] mb-[38px]">
       Registro Visitas
     </h1>
-    <form @submit.prevent="">
+    <form @submit.prevent="AddVisit">
       <h2 class="sub mb-[25px]">Datos Personales</h2>
 
       <div class="row">
@@ -57,7 +57,7 @@
           </template>
         </collapse-input>
       </div>
-      <base-button @click="addVisit">Registrar</base-button>
+      <base-button >Registrar</base-button>
     </form>
   </div>
 </template>

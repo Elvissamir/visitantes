@@ -42,7 +42,7 @@
           <img src="../assets/svg/barret.svg" alt="">
         </button>
         <div :class="isActiveAdmin ? 'dropdown-content':'hidden'">
-          <router-link class="sub-menu-item" to="">OFICINA</router-link>
+          <router-link class="sub-menu-item" to="/office">OFICINA</router-link>
           <router-link class="sub-menu-item" to="">MOTIVO</router-link>
           <router-link class="sub-menu-item" to="">REPORTE</router-link>
         </div>
@@ -56,7 +56,7 @@
         </button>
 
         <div :class="isActiveUser ? 'dropdown-content':'hidden'">
-          <router-link class="sub-menu-item" to="">REGISTRO</router-link>
+          <router-link class="sub-menu-item" to="/user">REGISTRO</router-link>
           <router-link class="sub-menu-item" to="">PERMISOS</router-link>
         </div>
 

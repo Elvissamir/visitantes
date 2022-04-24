@@ -47,7 +47,7 @@ export default {
 <style scoped>
 
 .collapse-form {
-  @apply relative w-[531px] h-auto
+  @apply relative w-[531px]
 }
 
 .collapse-item {
@@ -56,9 +56,8 @@ export default {
 }
 
 .collapse-body {
-  top: 19px;
-  left: 0px;
-  @apply absolute w-[531px] h-[180px] bg-dirtydark flex flex-row flex-wrap gap-x-2 px-[10px] my-[15px]
+
+  @apply w-[531px] h-[180px] bg-dirtydark flex flex-row flex-wrap gap-x-2 px-[10px]
 }
 
 .icon-plus {
