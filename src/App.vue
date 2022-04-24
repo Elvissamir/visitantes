@@ -1,14 +1,13 @@
 <template>
   <top-banner banner-path="{bannerPath}"></top-banner>
   <nav-bar v-if="$route.path !=='/'"></nav-bar>
-  <main class="bg-dirtywhite">
+  <main class="bg-blue-100 min-h-full">
     <router-view></router-view>
   </main>
   <the-footer></the-footer>
 </template>
 
 <script>
-
 import TopBanner from "./components/TopBanner.vue";
 import NavBar from "./components/NavBar.vue";
 import TheFooter from "./components/TheFooter.vue";

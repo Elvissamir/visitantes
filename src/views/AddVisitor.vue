@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-[78px] flex flex-col shrink-1 h-full">
+  <div class="mx-[78px] flex flex-col shrink-1">
     <h1 class="text-2xl font-subtitle text-black font-medium mt-[60px] mb-[38px]">
       Registro Visitas
     </h1>

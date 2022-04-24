@@ -1,10 +1,10 @@
 
 .loginForm {
-    @apply w-[450px] h-[240px] mt-40 mb-60 mx-auto bg-royal drop-shadow-cs rounded-[10px];
+    @apply flex w-[450px] h-[240px] mt-20 mb-60 mx-auto bg-royal drop-shadow-cs rounded-[10px];
 }
 
 .loginInput {
-    @apply h-10 w-60 bg-white  rounded font-content font-medium text-royal border-2 border-slate-500 focus:border-oran;
+    @apply h-10 w-60 bg-white rounded font-content font-medium text-royal border-2 border-slate-500 focus:border-oran;
 }
 
 .loginInput:focus {
@@ -15,6 +15,9 @@ input[placeholder] {
     @apply pl-2;
 }
 
+input {
+    
+}
 
 .loginBtn {
     @apply bg-boregray w-[110px] h-[30px] mt-2  mb-2 rounded font-title font-bold text-xs drop-shadow-cs text-dracula hover:bg-firered hover:text-white;
@@ -26,7 +29,7 @@ input[placeholder] {
 }
 
 .main-content-wrapper {
-    @apply w-full h-full mb-24;
+    @apply w-full min-h-full mb-24;
 }
 
 .content {

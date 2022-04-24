@@ -9,8 +9,8 @@ const routes = [
   { path: "/", component: Auth },
   { path: "/home", component: HomePage },
   { path: "/visitor", component: AddVisitor },
-  {path: "/user",component: AddUser},
-  {path: "/office",component: AddOffice}
+  { path: "/user",component: AddUser},
+  { path: "/office",component: AddOffice}
 ];
 
 const router = createRouter({

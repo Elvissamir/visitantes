@@ -1,7 +1,6 @@
 <template>
-
-  <div id="auth" class=" flex flex-col bg-dirtywhite  box-border main-wrapper">
-    <h1 class="font-title text-black text-4xl font-bold mx-auto mt-28">Conectarse</h1>
+  <div id="auth" class=" flex flex-col box-border main-wrapper">
+    <h1 class="font-title text-black text-5xl font-bold mx-auto mt-28">Conectarse</h1>
     <login-box></login-box>
   </div>
 </template>
@@ -24,7 +23,6 @@ export default {
   mounted() {
     console.log(this.currentPath);
   }
-
 }
 </script>
 
